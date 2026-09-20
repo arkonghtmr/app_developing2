@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Grok" version="22.1.0">
+  <diagram id="dogguide-uc" name="DogGuide Use Case">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="sys" value="DogGuide" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=40;html=1;rounded=0;absoluteArcSize=1;arcSize=8;strokeColor=#333333;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="1180" height="860" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pkg-account" value="Аккаунт" style="swimlane;startSize=28;fontStyle=1;rounded=1;arcSize=8;fillColor=#f5f5f5;strokeColor=#666666;html=1;" vertex="1" parent="sys">
+          <mxGeometry x="40" y="50" width="280" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-login" value="Войти" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pkg-account">
+          <mxGeometry x="50" y="50" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-register" value="Зарегистрироваться" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pkg-account">
+          <mxGeometry x="50" y="120" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-logout" value="Выйти" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="pkg-account">
+          <mxGeometry x="50" y="190" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pkg-catalog" value="Каталог" style="swimlane;startSize=28;fontStyle=1;rounded=1;arcSize=8;fillColor=#f5f5f5;strokeColor=#666666;html=1;" vertex="1" parent="sys">
+          <mxGeometry x="360" y="50" width="400" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-list" value="Просмотреть список пород" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pkg-catalog">
+          <mxGeometry x="100" y="50" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-details" value="Просмотреть карточку породы" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pkg-catalog">
+          <mxGeometry x="100" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-api" value="Получить данные с API" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="pkg-catalog">
+          <mxGeometry x="100" y="260" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pkg-fav" value="Избранное" style="swimlane;startSize=28;fontStyle=1;rounded=1;arcSize=8;fillColor=#f5f5f5;strokeColor=#666666;html=1;" vertex="1" parent="sys">
+          <mxGeometry x="800" y="50" width="340" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-add-fav" value="Добавить породу в избранное" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pkg-fav">
+          <mxGeometry x="70" y="50" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-list-fav" value="Просмотреть избранное" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pkg-fav">
+          <mxGeometry x="70" y="150" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-remove-fav" value="Удалить из избранного" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pkg-fav">
+          <mxGeometry x="70" y="260" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pkg-ml" value="Распознавание" style="swimlane;startSize=28;fontStyle=1;rounded=1;arcSize=8;fillColor=#f5f5f5;strokeColor=#666666;html=1;" vertex="1" parent="sys">
+          <mxGeometry x="360" y="450" width="400" height="340" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-recognize" value="Распознать породу по фото" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pkg-ml">
+          <mxGeometry x="100" y="60" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-pick" value="Выбрать изображение" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pkg-ml">
+          <mxGeometry x="100" y="160" width="200" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc-save-rec" value="Сохранить результат" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="pkg-ml">
+          <mxGeometry x="100" y="250" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="actor-guest" value="Гость" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="actor-user" value="Пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="30" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="gen" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="actor-user" target="actor-guest">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a1" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" edge="1" parent="1" source="actor-guest" target="uc-login">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-register">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-list">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-details">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-guest" target="uc-recognize">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a6" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-user" target="uc-logout">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a7" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-user" target="uc-add-fav">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a8" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-user" target="uc-list-fav">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a9" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-user" target="uc-remove-fav">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a10" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actor-user" target="uc-save-rec">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="inc1" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;" edge="1" parent="sys" source="uc-list" target="uc-api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="inc2" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;" edge="1" parent="sys" source="uc-details" target="uc-api">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="inc3" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;" edge="1" parent="sys" source="uc-recognize" target="uc-pick">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ext1" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;dashed=1;html=1;rounded=0;" edge="1" parent="sys" source="uc-save-rec" target="uc-recognize">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

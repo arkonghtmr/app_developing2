@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DogGuide</string>
+    <string name="login">Войти</string>
+    <string name="logout">Выйти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="guest">Гость</string>
+    <string name="favorites">Избранное</string>
+    <string name="recognize">Распознать породу</string>
+    <string name="add_favorite">В избранное</string>
+    <string name="remove_favorite">Удалить из избранного</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="pick_image">Галерея</string>
+    <string name="take_photo">Камера</string>
+    <string name="camera_permission_denied">Нет доступа к камере</string>
+    <string name="save_result">Сохранить результат</string>
+    <string name="empty_favorites">Избранное пусто</string>
+    <string name="login_required">Сначала войдите — гость не может сохранять избранное</string>
+    <string name="login_error">Введите логин и пароль</string>
+    <string name="wrong_credentials">Неверный логин или пароль</string>
+    <string name="user_exists">Такой логин уже зарегистрирован</string>
+    <string name="breed_image">Фото породы</string>
+    <string name="loading_breeds">Загрузка пород из API…</string>
+    <string name="load_error">Не удалось загрузить породы</string>
+    <string name="pick_photo_first">Сначала выберите фото</string>
+    <string name="recognizing">Распознавание…</string>
+    <string name="recognize_failed">Не удалось распознать изображение</string>
+    <string name="breed_not_in_catalog">Порода распознана, но её нет в справочнике</string>
+</resources>
