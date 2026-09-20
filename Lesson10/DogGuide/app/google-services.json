@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781379047166",
+    "project_id": "movieproject20092026",
+    "storage_bucket": "movieproject20092026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781379047166:android:fd597c3e6b408e2d5a9faf",
+        "android_client_info": {
+          "package_name": "ru.mirea.fedorov.dogguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH-ivE5Mo_1KWfCQcYqhQ7srhl0cZpyo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

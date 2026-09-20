@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DogGuide — прототип экранов</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f3eef8; color: #222; margin: 24px; }
+        h1 { color: #7E57C2; }
+        .screens { display: flex; flex-wrap: wrap; gap: 24px; }
+        .phone { width: 280px; background: #fff; border-radius: 24px; overflow: hidden;
+                 box-shadow: 0 8px 24px rgba(80,40,120,.18); }
+        .bar { background: #7E57C2; color: #fff; padding: 36px 16px 12px; font-weight: bold; }
+        .content { padding: 16px; min-height: 360px; }
+        .card { border: 1px solid #eee; border-radius: 12px; padding: 8px; margin-bottom: 8px;
+                display: flex; align-items: center; gap: 12px; }
+        .thumb { width: 64px; height: 64px; background: #ddd; border-radius: 8px; }
+        .btn { background: #7E57C2; color: #fff; border: 0; border-radius: 20px;
+               padding: 10px 16px; width: 100%; margin-top: 8px; }
+        input { width: 100%; padding: 10px; margin-top: 8px; box-sizing: border-box; }
+        .guest { font-size: 14px; color: #555; margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+<h1>DogGuide — прототип (аналог Figma)</h1>
+<p>Справочник пород собак. Гость смотрит каталог и распознаёт породу. Пользователь сохраняет избранное.</p>
+<div class="screens">
+    <div class="phone">
+        <div class="bar">DogGuide</div>
+        <div class="content">
+            <div class="guest">Режим: Гость</div>
+            <div class="card"><div class="thumb"></div>Husky</div>
+            <div class="card"><div class="thumb"></div>Golden Retriever</div>
+            <div class="card"><div class="thumb"></div>Pug</div>
+        </div>
+    </div>
+    <div class="phone">
+        <div class="bar">← Войти</div>
+        <div class="content">
+            <input placeholder="Логин или email">
+            <input placeholder="Пароль" type="password">
+            <button class="btn">Войти</button>
+            <button class="btn">Зарегистрироваться</button>
+        </div>
+    </div>
+    <div class="phone">
+        <div class="bar">← Husky</div>
+        <div class="content">
+            <div class="thumb" style="width:100%;height:140px"></div>
+            <h3>Husky</h3>
+            <p>Карточка породы из Dog CEO API.</p>
+            <button class="btn">В избранное</button>
+        </div>
+    </div>
+    <div class="phone">
+        <div class="bar">← Распознать породу</div>
+        <div class="content">
+            <div class="thumb" style="width:100%;height:140px"></div>
+            <button class="btn">Галерея</button>
+            <button class="btn">Камера</button>
+            <button class="btn">Распознать породу</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
