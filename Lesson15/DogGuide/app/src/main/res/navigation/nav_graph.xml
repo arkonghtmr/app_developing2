@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_catalog">
+
+    <fragment
+        android:id="@+id/nav_catalog"
+        android:name="ru.mirea.fedorov.dogguide.presentation.CatalogFragment"
+        android:label="@string/nav_catalog"
+        tools:layout="@layout/fragment_catalog" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="ru.mirea.fedorov.dogguide.presentation.FavoritesFragment"
+        android:label="@string/nav_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_recognize"
+        android:name="ru.mirea.fedorov.dogguide.presentation.RecognizeFragment"
+        android:label="@string/nav_recognize"
+        tools:layout="@layout/fragment_recognize" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ru.mirea.fedorov.dogguide.presentation.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_breed_details"
+        android:name="ru.mirea.fedorov.dogguide.presentation.BreedDetailsFragment"
+        android:label="@string/nav_breed_details"
+        tools:layout="@layout/fragment_breed_details">
+        <argument
+            android:name="breed_id"
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_open_breed_details"
+        app:destination="@id/nav_breed_details" />
+</navigation>

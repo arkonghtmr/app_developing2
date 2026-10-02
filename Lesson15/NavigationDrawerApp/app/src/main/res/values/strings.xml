@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NavigationDrawerApp</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_info">Информация</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="nav_header_title">Фёдоров Антон Сергеевич</string>
+    <string name="nav_header_subtitle">БСБО-09-23</string>
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+    <string name="home_title">DrawerGuide</string>
+    <string name="home_body">Учебное приложение с боковым меню. Destinations открываются из NavigationView, хост — NavHostFragment, граф — mobile_navigation.xml.</string>
+    <string name="info_title">Палитра и Drawer</string>
+    <string name="info_body">Цвета: фиолетовый #7E57C2, фон #F8F6FC.\n\nКнопка «назад» закрывает открытый drawer через NavigationUI.navigateUp. Hamburger появляется на верхнем уровне графа.</string>
+    <string name="profile_title">Студент</string>
+    <string name="profile_body">Фёдоров Антон Сергеевич\nБСБО-09-23\nНомер в списке группы: 9\nРТУ МИРЭА, 09.03.02</string>
+</resources>
