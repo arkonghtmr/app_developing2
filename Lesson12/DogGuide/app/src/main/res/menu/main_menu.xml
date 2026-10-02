@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_login"
+        android:title="@string/login"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_favorites"
+        android:title="@string/favorites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_recognize"
+        android:title="@string/recognize"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_layout_linear"
+        android:title="@string/layout_linear"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_layout_grid"
+        android:title="@string/layout_grid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_layout_staggered"
+        android:title="@string/layout_staggered"
+        app:showAsAction="never" />
+</menu>
