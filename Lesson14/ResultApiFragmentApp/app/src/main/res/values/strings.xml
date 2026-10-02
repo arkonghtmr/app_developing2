@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ResultApiFragmentApp</string>
+    <string name="hint_info">Введите текст</string>
+    <string name="open_bottom_sheet">OPEN BOTTOM SHEET</string>
+    <string name="bottom_sheet_title">BottomSheetFragment</string>
+    <string name="bottom_sheet_empty">Нет данных</string>
+    <string name="received_prefix">Получено: %1$s</string>
+</resources>

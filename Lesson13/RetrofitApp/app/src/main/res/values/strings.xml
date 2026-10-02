@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RetrofitApp</string>
+    <string name="todo_image">Изображение задачи</string>
+    <string name="mode_crop">Обрезка</string>
+    <string name="mode_inside">Вписать</string>
+    <string name="mode_resize">100×100</string>
+    <string name="picasso_crop">Picasso: обрезка</string>
+    <string name="picasso_inside">Picasso: вписать</string>
+    <string name="picasso_resize">Picasso: 100×100</string>
+    <string name="load_error">Не удалось загрузить список дел</string>
+    <string name="http_error">Ошибка HTTP: %1$d</string>
+    <string name="update_error">Не удалось обновить задачу</string>
+</resources>

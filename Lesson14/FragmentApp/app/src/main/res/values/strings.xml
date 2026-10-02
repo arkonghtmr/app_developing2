@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FragmentApp</string>
+    <string name="header_title">HeaderFragment — РТУ МИРЭА</string>
+    <string name="header_subtitle">Статический фрагмент в XML</string>
+    <string name="blank_title">BlankFragment</string>
+    <string name="student_number">Номер в списке группы: %1$d</string>
+    <string name="student_hint">Передан через Bundle, ключ my_number_student</string>
+</resources>

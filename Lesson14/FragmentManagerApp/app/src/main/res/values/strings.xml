@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FragmentManagerApp</string>
+    <string name="countries_title">Страны</string>
+    <string name="details_placeholder">Выберите страну из списка</string>
+    <string name="country_capital">Столица: %1$s</string>
+</resources>
